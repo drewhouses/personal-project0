@@ -1,5 +1,11 @@
 /* Stylesheet for index.html */
 
+@font-face {
+    font-family: myFont;
+    src:url(MorrisRomanBlack.ttf);
+}
+
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -10,33 +16,47 @@
     background: transparent;
 }
 
+
 body {
-    margin: 0;
-    margin-top: 0;
+    
 }
 
 header {
-    background-color: #381657;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #42784d;
+    font-family: myFont;
+    
 }
 
 header h1 {
     font-size: 50px;
     color: whitesmoke;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px 0 10px;
+}
+
+#splash {
+    text-align: center;
+    
+}
+
+.rivendell {
+    width: 100%;
+    height: 700px;
+    border-width: 10px;
+    border-color: #42784d;
 }
 
 nav {
-    display: flex;
     color: white;
+    text-align: center;
 }
 
 nav ul {
-    
 }
 
 nav ul li {
     display: inline;
-    margin: 10px;
+    margin: 100px;
+    text-decoration: none;
+    font-size: 30px;
 }
